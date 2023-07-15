@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Post{% endblock %}
+
+{% block content %}
+	<div class='update'>
+		<form class='blog-form' method='post'>
+			<div class='field'>
+				<label for='title'>Title<span aria-label='required'>*</span></label>
+				<input type='text' name='title' id='title' maxlength='32' value="{{ request.form['title'] }}">
+			</div>
+			<div class='field'>
+				<label for='body'>Body</label>
+				<textarea name='body' id='body'>{{ request.form['body'] }}</textarea>
+			</div>
+			<div class="button">
+				<button type="submit">Post</button>
+			</div>
+		</form>
+	</div>
+{% endblock %}

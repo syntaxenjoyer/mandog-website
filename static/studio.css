@@ -1,0 +1,370 @@
+html {background-color: black; color: #f2f2f2;}
+
+.img-link {cursor: pointer;}
+
+.header-big {
+	text-align: center;
+	margin: 2rem;
+	font-size: 2rem;
+}
+
+.centered-header {
+	text-align: center;
+	margin: 0rem 1rem 1rem;
+}
+
+.centered-paragraph {text-align: center;}
+
+/* Header */
+
+#logos {
+	display: flex;
+  height: 5rem;
+	justify-content: space-between;
+	margin: .5rem .5rem 2rem;
+}
+
+#textlogo {
+	display: flex;
+	height: 10rem;
+	justify-content: center;
+	margin: 2rem;
+}
+
+@media screen and (max-width: 625px) {
+	#navigation {visibility: hidden;}
+}
+
+@media screen and (min-width: 625px) {
+	#mobile-nav {visibility: hidden;}
+}
+
+.mobile-menu-content {
+	width: 10rem;
+	max-height: 0;
+	overflow: hidden;
+	position: absolute;
+	background-color: #101010;
+	z-index: 20;
+}
+
+#mobile-nav {
+	padding: 0px 30px;
+}
+
+#mobile-nav a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #f2f2f2;
+}
+#mobile-nav a:hover{
+	background-color: #6000ff;
+	color: black;
+}
+
+#mobile-nav label {
+	display: block;
+	cursor: pointer;
+}
+
+#mobile-nav input {
+	display: none;
+}
+
+#mobile-nav input:checked ~ .mobile-menu-content {
+	max-height: 100%;
+}
+
+#navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-color: black;
+	height: 2rem;
+}
+
+#navigation a {
+	color: #f2f2f2;
+	text-align: center;
+	padding: 2rem;
+	text-decoration: none;
+}
+#navigation a:hover {
+	background-color: #6000ff;
+	color: black;
+}
+
+#user {
+	display: flex;
+	height: 3rem;
+	font-size: .75rem;
+	align-items: flex-end;
+	flex-direction: column;
+}
+#user a {
+	text-decoration: none;
+	color: #00ffff;
+	margin-top: 1rem;
+}
+#user a:hover {
+	color: #8000ff;
+}
+
+.flash {
+	text-align: center;
+	color: #800000
+}
+
+/* Footer */
+
+#footer {
+	display: flex;
+	justify-content: space-between;
+	font-size: .8rem;
+	height: 4rem;
+}
+
+#footer .footer-content{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	font-size: inherit;
+	margin: 1rem;
+}
+
+.footer-content a {
+	color: #f2f2f2;
+	text-decoration: none;
+}
+
+/* Home */
+
+#manblog {
+	display: flex;
+	justify-content: center;
+	flex-flow: column nowrap;
+	margin: 2rem auto;
+	max-width: 40rem;
+}
+
+#manblog .title-block {
+	display: flex;
+	justify-content: center;
+	max-width: 20rem;
+	margin: 0 auto;
+}
+#manblog .title-block a {
+	text-align: right;
+	text-decoration: none;
+	color: #00ffff
+}
+#manblog .title-block a:hover {color: #8000ff}
+
+#manblog .mb-post-content {
+	text-align: justify;
+	overflow-wrap: break-word;
+	margin-bottom: 2rem;
+}
+
+.book-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	background-color: #ff0080;
+	width: 10rem;
+	height: 3rem;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.book-button a {
+	text-decoration: none;
+	font-size: 1.25rem;
+	text-align: center;
+	color: #f2f2f2;
+}
+
+/* Contact */
+
+.thankyou {text-align: center;}
+
+.contact-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.contact-text a {
+	text-decoration: none;
+	color: #00ffff;
+}
+
+.contact-text a:hover {
+	color: #6000ff;
+}
+
+.contact-form {
+	margin: 0 auto;
+	width: 20rem;
+	padding: 1rem;
+}
+
+.contact-form .field {
+	margin-top: 1rem;
+	width: 20rem;
+}
+
+.contact-form .field label {
+	display: block;
+	width: 5rem;
+	text-align: left;
+}
+
+.contact-form .field input, textarea {
+	font: 1rem sans-serif;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	background-color: #101010;
+	color: #f2f2f2;
+	border: none;
+}
+
+.contact-form .field textarea {
+	vertical-align: top;
+	height: 5rem;
+	resize: none;
+	overflow: scroll;
+}
+
+.contact-form .button {
+	text-align: right;
+	margin-top: 2rem;
+}
+
+button {
+	background-color: #101010;
+	color: #f2f2f2;
+	border: none;
+	cursor: pointer;
+}
+
+/* Update */
+
+.update {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.update .blog-form .field {
+	margin-top: 1rem;
+	width: 40rem;
+}
+
+.update .blog-form .field label {
+	display: block;
+	max-width: 5rem;
+}
+
+.update .blog-form .field textarea {
+	resize: none;
+	height: 10rem;
+	overflow: scroll;
+}
+
+.update .blog-form .field input, textarea {
+	font: 1rem sans-serif;
+	width: 100%;
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: #101010;
+	color: #f2f2f2;
+	border: none;
+}
+
+.update .button {
+	text-align: right;
+	margin-top: 2rem;
+}
+
+.update .delete-button {
+	text-align: right;
+	margin-top: 1rem;
+}
+
+/* Shows */
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: center;
+	max-width: 60rem;
+	margin: auto;
+}
+
+.img-wrapper {
+	height: 10rem;
+	cursor: pointer;
+	position: relative;
+	flex: 1 1 auto;
+}
+
+.thumbnail {
+	object-fit: cover;
+	object-position: 50% 40%;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+/* About */
+
+.bios {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bio {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 2rem;
+}
+
+.bio-img-wrapper {
+	height: 10rem;
+	min-width: 10rem;
+	max-width: 10rem;
+	margin-right: 1rem;
+}
+
+.bio-text-wrapper {
+	display: flex;
+	max-width: 40rem;
+	margin-left: 1rem;
+}
+
+.bio-img {
+	object-fit: cover;
+	object-position: 50% 50%;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.bio-text {margin: 0;}
+
+/* Merch */
+
+#soon {
+	text-align: center;
+	margin: 4rem;
+}

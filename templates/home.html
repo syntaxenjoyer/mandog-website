@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+	<div id="textlogo">
+		<img src="{{ url_for('static', filename='resources/mandog-text.png') }}" alt="Text Logo Banner">
+	</div>
+	<div id="manblog">
+		<h1 class='header-big'>The Manblog</h1>
+		{% for post in posts %}
+			<article class='mb-post'>
+				<header>
+					<div class='title-block'>
+						<h2 class='centered-header'>{{ post['title'] }}</h2>
+						{% if g.user %}
+							<a href="{{ url_for('manblog.update', id=post['id']) }}">Edit</a>
+						{% endif %}
+					</div>
+					<h3 class='centered-header'>
+						{{ post['username'] }} | {{ post['created'].strftime('%m-%d-%Y') }}
+					</h3>
+				</header>
+				<p class='mb-post-content'>{{ post['body'] }}</p>
+			</article>
+		{% endfor %}
+	</div>
+	<div class='book-button'>
+		<a href="{{ url_for('contact') }}">Book Us Now!</a>
+	</div>
+{% endblock %}

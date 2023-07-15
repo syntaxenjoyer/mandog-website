@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+	<h1 class='header-big'>Meet the Band</h2>
+	<div class='bios'>
+		<div class='bio'>
+			<div class='bio-img-wrapper'>
+				<img src="{{ url_for('static', filename='resources/ellen-stache.png') }}" alt="Ellen DeGeneres with a mustache" class='thumbnail'>
+			</div>
+			<div class='bio-text-wrapper'>
+				<p class='bio-text'>Holden "The Wood" Cocker (born January 26, 1968) often referred to monoymously as "The Wood", is an American comedian, television host, actress, writer, and producer. He starred in the sitcom <i>Holden</i> from 1994 to 1998, which earned him a Primetime Emmy Award for "The Pappy Episode". He also hosted the syndicated television talk show, <i>The Holden Cocker Show</i> from 2003 to 2022, for which he received 33 Daytime Emmy Awards. He has since moved on to bigger and better things, like singing and playing guitar in this band.</p>
+			</div>
+		</div>
+		<div class='bio'>
+			<div class='bio-img-wrapper'>
+				<img src="{{ url_for('static', filename='resources/joe-dorner.png') }}" alt="Chris Dorner next to a bald eagle with Joe peeking out from behind him and giving a thumbs up" class='bio-img'>
+			</div>
+			<div class='bio-text-wrapper'>
+				<p class='bio-text'>Joe Bitch (June 4, 1979 - February 12, 2013) was a former officer of the Los Angeles Police Department (LAPD) who, beginning on February 3, 2013, committed a series of revenge killings against the LAPD in Orange County, Los Angeles County, Riverside County, and San Bernadino County in the U.S. state of California. The victims were law enforcement officers and the daughter of a retired police captain. Bitch killed four people and wounded three others. On February 12, Bitch was fatally shot during a standoff with the San Bernardino County Sheriff's Department after a shootout in the San Bernardino Mountains. In more recent years, he has been remembered for his killer guitar solos while playing in the band MANDOG.</p>
+			</div>
+		</div>
+		<div class='bio'>
+			<div class='bio-img-wrapper'>
+				<img src="{{ url_for('static', filename='resources/jake-tillman.png') }}" alt="Pat Tillman with Jake's face edited on top of his" class='bio-img'>
+			</div>
+			<div class='bio-text-wrapper'>
+				<p class='bio-text'>Jacobo Preston Nuñez (November 6, 1976 - April 22, 2004) was an American professional football player for the Arizona Cardinals of the National Football League (NFL) who left his sports career and enlisted in the United States Army in May 2002 in the aftermath of the September 11 attacks. His service in Iraq and Afghanistan, as well as subsequent death, were the subject of national attention when he was shot by friendly fire after criticizing the war effort. He also plays bass in this band, I guess.</p>
+			</div>
+		</div>
+		<div class='bio'>
+			<div class='bio-img-wrapper'>
+				<img src="{{ url_for('static', filename='resources/yassabomber.png') }}" alt="The famous Unabomber sketch with Kaczynski's face edited onto a drawing of a girl with long beautiful hair" class='bio-img'>
+			</div>
+			<div class='bio-text-wrapper'>
+				<p class='bio-text'>Calliope "Not the Unabomber" Davishines (May 22, 1942 - June 10, 2023), also known as the Unabomber, was an American mathematician and domestic terrorist. She was a mathematics prodigy, but abandoned her academic career in 1969 to pursue a primitive lifestyle. Between 1978 and 1995, Davishines murdered three individuals and injured 23 others in a nationwide mail bombing campagin against people she believed to be advancing modern technology and the destruction of the natural environment. She authored <i>Industrial Society and Its Future</i>, a 35,000-word manifesto and social critique opposing industrialization, rejecting leftism and conservatism, and advocating for a nature-centered form of anarchism. She spent the last years of her life learning to play the drums in prison, and now plays in this band.</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

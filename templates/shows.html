@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Shows{% endblock %}
+
+{% block content %}
+	<h1 class='header-big'>Past Shows</h1>
+	<div class='gallery'>
+		{% for img in images %}
+			<div class='img-wrapper'>
+				<a href={{ url_for('static', filename='resources/gallery/%s' % img.name) }}>
+					<img src={{ url_for('static', filename='resources/gallery/thumbnails/%s' % img.name) }} class='thumbnail'>
+				</a>
+			</div>
+		{% endfor %}
+	</div>
+	<hr style='margin-top: 3rem;'>
+	<h1 class='header-big'>Upcoming Shows</h1>
+	<div class='upcoming-shows'>
+		<h2 class='centered-header'>Metropolis</h2>
+		<h3 class='centered-header'>6/17/23</h3>
+		<p class='centered-paragraph'>7pm - Hollow Skulls<br>8pm - MANDOG<br>9pm - Baseball Touchdown</p>
+		<h2 class='centered-header'>Alamo Drafthouse South Lamar</h2>
+		<h3 class='centered-header'>7/1/23</h3>
+		<p class='centered-paragraph'>TBA<p>
+	</div>
+{% endblock %}
+
